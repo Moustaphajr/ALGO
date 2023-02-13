@@ -1,0 +1,23 @@
+ALGORITHM phrase
+VAR
+    i,NbVoyelles:=0,NombreMots:=0,NombreCarac:=0:INTEGER;
+BEGIN
+
+    write("donner la phrase")
+    read(phrase)
+    FOR i FROM 0 TO phrase.length i++  DO
+       IF (phrase[i]==  "A" || phrase[i]=="a"|| phrase[i]=="B" || phrase[i]=="B" || phrase[i]=="e" || phrase[i]=="E" || phrase[i]=="u" || phrase[i]=="U" || phrase[i]=="o" || phrase[i]=="O"||phrase[i]=="y"||phrase[i]=="Y")
+            NbVoyelles++;
+        END_IF
+        IF(phrase[i]<> " ")
+            NombreCarac++;
+        END_IF
+        IF(phrase[i]==" ")
+            NombreMots++
+        END_IF
+    END_FOR
+    write("nombre de caractéres",index);
+    write("nombre de voyelles",j);
+    write("nombre de mot",v);
+    
+END
